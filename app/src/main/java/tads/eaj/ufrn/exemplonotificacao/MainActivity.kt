@@ -15,14 +15,6 @@ import androidx.core.app.NotificationManagerCompat
 import android.content.Intent
 
 
-
-
-
-
-
-
-
-
 class MainActivity : AppCompatActivity() {
 
     private val CHANNEL_ID = "Aula"
@@ -62,7 +54,7 @@ class MainActivity : AppCompatActivity() {
         // Cria a notificação
         mBuilder = NotificationCompat.Builder(this, CHANNEL_ID)
             .setDefaults(Notification.DEFAULT_ALL)
-            .setSmallIcon(R.drawable.ic_launcher_foreground)
+            .setSmallIcon(android.R.drawable.btn_star)
             .setContentTitle("Título")
             .setContentText("Conteúdo de texto")
             .setContentIntent(pendingIntent)
